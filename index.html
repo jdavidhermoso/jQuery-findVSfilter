@@ -5,8 +5,96 @@
             jQuery Find() VS Filter()
         </title>
         <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+        <script src="main.js"></script>
 
     </head>
     <body>
+        <div class="wiki" id="find">
+            <p class="wiki-desc">
+                <span> Description: </span> Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
+            </p>
+            <ul class="wiki-args">
+                <li class="wiki-args-title">
+                    Arguments accepted:
+                </li>
+                <li>
+                    <span> selector: </span> A string containing a selector expression to match elements against.
+                </li>
+                <li>
+                    <span> element: </span> An element or a jQuery object to match elements against.
+                </li>
+            </ul>
+            <p>
+                <a href="https://api.jquery.com/jquery/#selector-context">Selector context</a> is implemented with the .find() method; therefore, $( "li.item-ii" ).find( "li" ) is equivalent to $( "li", "li.item-ii" ).
+            </p>
+        </div>
+        <div class="wiki" id="filter">
+            <p class="wiki-desc">
+                <span> Description: </span> Reduce the set of matched elements to those that match the selector or pass the function's test.
+            </p>
+            <ul class="wiki-args">
+                <li class="wiki-args-title">
+                    Arguments accepted:
+                </li>
+                <li>
+                    <span> selector: </span> A string containing a selector expression to match the current set of elements against.
+                </li>
+                <li>
+                    <span> selection: </span> An existing jQuery object to match the current set of elements against.
+                </li>
+                <li>
+                    <span> element: </span> An element or a jQuery object to match elements against.
+                </li>
+                <li class="highlight">
+                    <span> function: </span> A function used as a test for each element in the set. this is the current DOM element.
+                </li>
+            </ul>
+
+        </div>
+        <div class="result">
+            <p>
+                Cars brands and models
+            </p>
+            <ul>
+                <li class="brand" data-brand-id="1">
+                    Ford
+                    <ul class="models">
+                        <li class="car-model">
+                            Ka
+                        </li>
+                        <li class="car-model">
+                            Kuga
+                        </li>
+                        <li class="car-model">
+                            Mondeo
+                        </li>
+                    </ul>
+                </li>
+                <li class="brand" data-brand-id="2">
+                    Nissan
+                    <ul class="models">
+                        <li class="car-model">
+                            Micra
+                        </li>
+                        <li class="car-model">
+                            GT-R
+                        </li>
+                        <li class="car-model">
+                            Leaf
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="buttons" id="buttons">
+            <button id="filterBtn">
+                Filter
+            </button>
+
+            <button id="findBtn">
+                Find
+            </button>
+        </div>
     </body>
 </html>

@@ -9,7 +9,13 @@
 
     </head>
     <body>
+    <h1>
+        jQuery: find() VS filter()
+    </h1>
         <div class="wiki" id="find">
+            <h2>
+                Find
+            </h2>
             <p class="wiki-desc">
                 <span> Description: </span> Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element.
             </p>
@@ -29,6 +35,9 @@
             </p>
         </div>
         <div class="wiki" id="filter">
+            <h2>
+                Find
+            </h2>
             <p class="wiki-desc">
                 <span> Description: </span> Reduce the set of matched elements to those that match the selector or pass the function's test.
             </p>
@@ -57,7 +66,7 @@
             </p>
             <ul>
                 <li class="brand" data-brand-id="1">
-                    Ford
+                    1 - Ford
                     <ul class="models">
                         <li class="car-model">
                             Ka
@@ -71,7 +80,7 @@
                     </ul>
                 </li>
                 <li class="brand" data-brand-id="2">
-                    Nissan
+                    2 - Nissan
                     <ul class="models">
                         <li class="car-model">
                             Micra
@@ -88,6 +97,10 @@
             </ul>
         </div>
         <div class="buttons" id="buttons">
+            <label>
+                Choose a brand number
+            </label>
+            <input type="number" id="brand-input" min="1" max="2" />
             <button id="filterBtn">
                 Filter
             </button>

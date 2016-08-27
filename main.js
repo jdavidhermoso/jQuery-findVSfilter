@@ -31,7 +31,7 @@ $(document).ready(function() {
             return carBrandId == brandN;
         }).find('.car-model').css('backgroundColor','red');*/
 
-        //Even car models elements!
+        //Odd car models elements!
         $( ".brand .car-model" ).filter(function( index ) {
             return (index+1) % 2 === 0
         }).css('backgroundColor','red');
